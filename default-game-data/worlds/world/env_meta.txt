@@ -1,0 +1,7 @@
+day_count = 0
+time_of_day = 6125
+lbm_introduction_times_version = 1
+game_time = 3205
+last_clear_objects_time = 0
+lbm_introduction_times = 
+EnvArgsEnd
