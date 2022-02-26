@@ -26,7 +26,7 @@ In the root directory of this repository, issue the following command:
 docker build -t insidethebox .
 ```
 
-## Creating a container
+## Running a container
 
 ### Game data directory
 
@@ -71,3 +71,9 @@ services:
     user: "30000:30000"
     restart: unless-stopped
 ```
+
+### Default admin user
+
+When creating a new server, the default admin user name is `wolf` and there's no password.
+To add other admins, change the `./itb-game-data/minetest.conf` configuration file and specify the new admin user name on the `name = ...` line.
+After that, just connect with a new user with that name.
