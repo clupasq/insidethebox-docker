@@ -1,6 +1,6 @@
 
 function ensure_world_created() {
-    if [ -d "~/.minetest/worlds/world/" ]; then
+    if [ -d "/var/lib/minetest/.minetest/worlds/world/" ]; then
         echo "World seems to already be set up."
         return
     fi
@@ -12,7 +12,7 @@ function ensure_world_created() {
 }
 
 function copy_localmusic() {
-    if [ -d "~/.minetest/worlds/world/worldmods/localmusic" ]; then
+    if [ -d "/var/lib/minetest/.minetest/worlds/world/worldmods/localmusic" ]; then
         echo "Localmusic already set up."
         return
     fi
