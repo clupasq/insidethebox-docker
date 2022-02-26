@@ -5,6 +5,8 @@
 This project is a Docker Image that contains a minimal playable Inside the Box world.
 It is based on the official [Minetest Doker image](https://github.com/minetest/minetest#docker).
 
+![Gameplay Screenshot](./screenshot.jpg)
+
 ## Prerequisites
 
 Docker needs to be installed.
@@ -61,7 +63,7 @@ version: "2.1"
 services:
   minetest:
     image: insidethebox
-    container_name: minetest
+    container_name: itb-server
     volumes:
       - ./itb-game-data/:/var/lib/minetest/.minetest/
     ports:
